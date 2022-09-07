@@ -46,3 +46,25 @@ describe('Tests over new property insertion ',()=>{
         expect(content).toBe(expectContent)
     })
 })
+describe('Tests over querying properties',()=>{
+    beforeEach(()=>{
+            writeFileSync(path, '')
+    })
+
+    test('It should return null when key is not found',()=>{
+        const userPropertyDao =new UserPropertyDao()
+        expect(userPropertyDao.get('name')).toBe(null)
+    })
+
+    test('It should return correct value when key is found',()=>{
+        const userPropertyDao = new UserPropertyDao
+        const userProperty: UserProperty =  {
+            key: 'name',
+            value: 'Kevin',
+        }
+        userPropertyDao.add(userProperty)
+
+        expect(userPropertyDao.get('name')).toBe('Kevin')
+    })
+
+})
