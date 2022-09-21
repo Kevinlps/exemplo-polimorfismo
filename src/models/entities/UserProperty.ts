@@ -1,6 +1,6 @@
 type UserProperty = {
-    key:string
-    value:string | number | boolean
+  key: string
+  value: string
 }
 
 export default UserProperty
