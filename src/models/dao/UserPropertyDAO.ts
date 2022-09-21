@@ -1,8 +1,9 @@
 import { appendFileSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import UserProperty from '../entities/UserProperty'
+import IUserPropertyDAO from './IUserPPropertyDAO'
 
-export default class UserPropertyDAO {
+export default class UserPropertyDAO implements IUserPropertyDAO{
   private _userPropertyFilePath: string
   private _properties: UserProperty[]
 
