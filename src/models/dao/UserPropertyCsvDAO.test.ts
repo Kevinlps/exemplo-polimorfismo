@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import UserProperty from "../entities/UserProperty";
 import UserPropertyCsvDAO from "./UserPropertyCsvDAO";
+import UserPropertyDAO from "./UserPropertyDAO";
 
 const path = join(__dirname, '..' , '..' , 'data' , 'user.csv')
 
@@ -88,5 +89,10 @@ describe('Tests over property querying', ()=>{
         value = userPropertyDAO.get('id')
         expect(value).toBe('37')
         
+    })
+    test('It should return null when property does not exixt',()=>{
+        const userPropertyDAO = new UserPropertyCsvDAO()
+        const value = userPropertyDAO.get('name')
+        expect(value).toBe(null)
     })
 })
