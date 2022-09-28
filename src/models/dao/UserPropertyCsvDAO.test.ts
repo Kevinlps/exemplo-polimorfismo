@@ -59,10 +59,34 @@ describe('Tests over property querying', ()=>{
         expect(value).toBe(userProperties.value)
     })
     test('It should correctly update a property value',()=>{
-        const userProperties: UserProperty = {
+        const userProperty: UserProperty = {
             key: 'name',
             value: 'abcd',
         }
-        const userPropertyDAO = new UserPropertyCsvDAO() 
+
+        const userPropertyDAO = new UserPropertyCsvDAO
+        userPropertyDAO.set(userProperty)
+        userProperty.value = 'clara'
+        userPropertyDAO.set(userProperty)
+        userProperty.value = 'patricia'
+        userPropertyDAO.set(userProperty)
+
+        const value = userPropertyDAO.get('name') 
+        expect(value).toBe(userProperty.value)
+    })
+    test('It should correctly load the properties file content ',()=>{
+        const content = 'key,value\nname,kevin\nemail,kevin@email.com\nid,37\n'
+        writeFileSync(path,content)
+
+        const userPropertyDAO = new UserPropertyCsvDAO()
+        let value = userPropertyDAO.get('name')
+        expect(value).toBe('kevin')
+        
+        value = userPropertyDAO.get('email')
+        expect(value).toBe('kevin@email.com')
+        
+        value = userPropertyDAO.get('id')
+        expect(value).toBe('37')
+        
     })
 })

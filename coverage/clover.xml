@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664328399390" clover="3.2.0">
-  <project timestamp="1664328399390" name="All files">
-    <metrics statements="30" coveredstatements="25" conditionals="7" coveredconditionals="2" methods="10" coveredmethods="9" elements="47" coveredelements="36" complexity="0" loc="30" ncloc="30" packages="1" files="2" classes="2"/>
+<coverage generated="1664329291565" clover="3.2.0">
+  <project timestamp="1664329291565" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="7" coveredconditionals="6" methods="10" coveredmethods="10" elements="47" coveredelements="46" complexity="0" loc="30" ncloc="30" packages="1" files="2" classes="2"/>
     <file name="UserPropertyCsvDAO.ts" path="C:\Users\aluno\exemplo-polimorfismo\src\models\dao\UserPropertyCsvDAO.ts">
-      <metrics statements="19" coveredstatements="15" conditionals="3" coveredconditionals="0" methods="5" coveredmethods="4"/>
+      <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="18" count="4" type="stmt"/>
-      <line num="22" count="8" type="stmt"/>
-      <line num="23" count="8" type="stmt"/>
-      <line num="24" count="8" type="stmt"/>
-      <line num="25" count="8" type="stmt"/>
-      <line num="27" count="0" type="cond" truecount="0" falsecount="3"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="34" count="0" type="stmt"/>
-      <line num="41" count="5" type="stmt"/>
-      <line num="43" count="5" type="stmt"/>
-      <line num="44" count="8" type="stmt"/>
-      <line num="45" count="8" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="22" count="10" type="stmt"/>
+      <line num="23" count="10" type="stmt"/>
+      <line num="24" count="10" type="stmt"/>
+      <line num="25" count="10" type="stmt"/>
+      <line num="27" count="8" type="cond" truecount="3" falsecount="0"/>
+      <line num="28" count="6" type="stmt"/>
+      <line num="29" count="6" type="stmt"/>
+      <line num="34" count="6" type="stmt"/>
+      <line num="41" count="8" type="stmt"/>
+      <line num="43" count="8" type="stmt"/>
+      <line num="44" count="11" type="stmt"/>
+      <line num="45" count="11" type="stmt"/>
     </file>
     <file name="UserPropertyDao.ts" path="C:\Users\aluno\exemplo-polimorfismo\src\models\dao\UserPropertyDao.ts">
-      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="16" count="5" type="stmt"/>
-      <line num="17" count="5" type="stmt"/>
-      <line num="19" count="5" type="cond" truecount="1" falsecount="1"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="22" count="5" type="stmt"/>
-      <line num="25" count="5" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="19" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="22" count="6" type="stmt"/>
+      <line num="25" count="8" type="stmt"/>
+      <line num="29" count="8" type="stmt"/>
+      <line num="31" count="5" type="cond" truecount="1" falsecount="1"/>
     </file>
   </project>
 </coverage>
